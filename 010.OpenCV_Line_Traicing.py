@@ -25,7 +25,7 @@ def main():
             crop_img =frame[60:120, 0:160]
 
             imgHsv = cv2.cvtColor(crop_img, cv2.COLOR_BGR2HSV)
-
+            #black color detection : HSV range
             lower = np.array([0, 0, 0])
 
             upper = np.array([180, 255, 60])
